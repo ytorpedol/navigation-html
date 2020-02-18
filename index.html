@@ -4,22 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dashboard - Brand</title>
-    <link rel="stylesheet" href="http://url.cn/5CCfYDp">
-    <link rel="stylesheet" href="http://url.cn/5tRTpBk" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ytorpedol/navigation-html/4392253a65eaa9333a4d300b0d0c64cc5ba56a17/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ytorpedol/navigation-html/4392253a65eaa9333a4d300b0d0c64cc5ba56a17/assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.7.1/css/all.css">
 </head>
 
 <body id="page-top">
     <div id="wrapper">
-
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 fixed-top">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 fixed-top hline">
             <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>网站</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar" id="znav">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#技术"><i class="fas fa-folder"></i><span>技术</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#学习"><i class="fas fa-folder"></i><span>学习</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#博客"><i class="fas fa-folder"></i><span>博客</span></a></li>
@@ -50,305 +49,242 @@
                     <div class="container-fluid">
                         <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                             <div class="input-group">
-                            <select class="form-inline border-0">
-                                <option value="12" selected="">This is item 1</option>
-                                <option value="13">This is item 2</option>
-                                <option value="14">This is item 3</option></select>
-                                <input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
-                                <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                            </div>
+                                <select class="form-inline border-0 w-25" id="searchsel">
+                                    <option value="https://www.baidu.com/s?wd=$s" selected="">百度</option>
+                                    <option value="https://www.bing.com/search?q=$s">必应</option>
+                                    <option value="14">This is </option></select>
+                                    <input class="bg-light form-control border-0 small" id="searchinput" type="text" placeholder="Search for ...">
+                                    <div class="input-group-append"><button class="btn btn-primary py-0" id="sbtn" type="button"><i class="fas fa-search"></i></button></div>
+                                </div>
                             </form>
                     </div>
                 </nav>
 
-                <div class="container-fluid zbody1" id="zbody">
+                <div class="container-fluid zbody1 hline" id="zbody">
                     <div class="d-sm-flex justify-content-between align-items-center mb-2">
-                        <h4 class="text-dark mb-0" id="技术">技术</h4>
+                        <h5 class="text-dark mb-0" id="技术">技术</h5>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
                         </div>
                     </div>
-         
 
 
                     <div class="d-sm-flex justify-content-between align-items-center mb-2">
-                        <h4 class="text-dark mb-0" id="学习">学习</h4>
+                        <h5 class="text-dark mb-0" id="技术">技术</h5>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-xl-2 mb-2">
+                            <a href="https://oschina.net/" target="_blank" data-toggle="tooltip" title="网站名： 描述：">
+                            <div class="card border-left-primary py-1">
+                                <div class="card-body no-gutters textdark">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto w-25"><img class="media-left img-fluid" src="https://icon.occ.hk/get.php?url=https://v2ex.com" /></div>
+                                        <div class="col mr-1 ml-1">
+                                            <div class="font-weight-bold mb-0 ooh"><span>6个字符，多省略</span></div>
+                                            <div class="mb-0 ds doh"><span>能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述能填两行描述</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
                         </div>
                     </div>
-    
+                    
 
-                    <div class="d-sm-flex justify-content-between align-items-center mb-2">
-                        <h4 class="text-dark mb-0" id="视频">视频</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          
-
-                    <div class="d-sm-flex justify-content-between align-items-center mb-2">
-                        <h4 class="text-dark mb-0" id="博客">博客</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters">
-                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
-                                        <div class="col mr-2 ml-2">
-                                            <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
-                                            <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
 
@@ -358,18 +294,14 @@
 
             </div>
 
+
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright">
+                    <div class="text-center my-auto copyright ml-5 pl-5">
                         <ul class="list-inline">
                             <li class="list-inline-item">Powered by</li>
                             <li class="list-inline-item"><a href="https://github.com/sleepwood/cf-worker-dir" target="_blank"><i class="fab fa-github"></i>cf work nav</a></li>
                             <li class="list-inline-item">Copyright © Brand 2019</li>
-                            <li class="list-inline-item"><i class="fa fa-balance-scale"></i>MIT License</li>
-                        </ul>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">Base on</li>
-                            <li class="list-inline-item"><a href="https://github.com/sleepwood/cf-worker-dir" target="_blank"><i class="fab fa-github"></i>Cf-Worker-Dir</a></li>
                             <li class="list-inline-item"><i class="fa fa-balance-scale"></i>MIT License</li>
                         </ul>
                     </div>
@@ -380,9 +312,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="http://url.cn/5rWWEED"></script>
+    <script src="https://rawcdn.githack.com/ytorpedol/navigation-html/4ba81aab4354a88a7d2dd9a5c28d230ed39da1b1/assets/js/script.min.js"></script>
+   
     <script>
         var clickn=1;
+        $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
         $("#sidebarToggle").click(function(){
             if(clickn==1){
             $("#leftnav").removeClass("leftnav1");
@@ -398,7 +335,23 @@
             $("#zbody").addClass("zbody1");
             clickn=1;
             }
-        })
+        });
+        $("#sbtn").on('click',function(e){
+            var sel=$('#searchsel').val();
+            console.log(sel);
+            var input=$('#searchinput').val();
+            console.log(input);
+            var url = url = sel.replace(/\$s/,$('#searchinput').val());
+            console.log(url);
+            window.open(url);
+            
+        });
+        $("#searchinput").bind("keypress", function(){
+          if (event.keyCode == 13){
+          // 触发需要调用的方法
+          $("#sbtn").click();
+          }
+      });
         !function(o){"use strict";o("#sidebarToggle, #sidebarToggleTop").on("click",function(e){o("body").toggleClass("sidebar-toggled"),o(".sidebar").toggleClass("toggled"),o(".sidebar").hasClass("toggled")&&o(".sidebar .collapse").collapse("hide")}),o(window).resize(function(){o(window).width()<768&&o(".sidebar .collapse").collapse("hide")}),o("body.fixed-nav .sidebar").on("mousewheel DOMMouseScroll wheel",function(e){if(o(window).width()>768){var l=e.originalEvent,t=l.wheelDelta||-l.detail;this.scrollTop+=30*(t<0?1:-1),e.preventDefault()}}),o(document).on("scroll",function(){o(this).scrollTop()>100?o(".scroll-to-top").fadeIn():o(".scroll-to-top").fadeOut()}),o(document).on("click","a.scroll-to-top",function(e){var l=o(this);o("html, body").stop().animate({scrollTop:o(l.attr("href")).offset().top},1e3,"easeInOutExpo"),e.preventDefault()})}(jQuery);
       
         </script>
