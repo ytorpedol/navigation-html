@@ -18,6 +18,16 @@
     padding-left: 130px;
     margin-top: 80px;
 }
+@media screen and (max-width: 768px){
+    .leftnav1{
+        margin-left: 105px;
+        display:none;
+    }
+    .zbody1{
+        padding-left: 130px;
+        margin-top: 20px;
+    }     
+}
 a:hover{
     text-decoration:none;
 }
@@ -64,3 +74,4 @@ a:hover{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
