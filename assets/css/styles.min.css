@@ -7,8 +7,19 @@
     overflow-y: auto;
 }
 
+.jie {
+    color: black;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .topnav1 {
     margin-left: 224px;
+}
+
+.text-dark {
+    color: #000000 !important;
 }
 
 .zbody1 {
@@ -25,10 +36,14 @@
     padding: 15px 128px 0px 24px;
 }
 
-.op {
-    filter: alpha(opacity=70);
-    -moz-opacity: 0.7;
-    opacity: 0.7;
+.card {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+img {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
 }
 
 :target:before {
@@ -46,19 +61,67 @@
 
 .dong1 {
     width: 200px;
-    height: 550px;
+    height: 500px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .dong2 {
     width: 100px;
-    height: 550px;
+    height: 500px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
+.ooh {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.doh {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.tooltip-inner {
+    background-color: rgba(30, 144, 255, 0.6);
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: rgba(30, 144, 255, 0.6);
+}
+
+.ooh {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.doh {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 767px) {
     .topnav1 {
         display: none;
     }
@@ -79,7 +142,7 @@
 
     .dong1 {
         width: 104px;
-        height: 550px;
+        height: 500px;
         text-align: center;
         overflow-y: auto;
         overflow-x: hidden;
@@ -87,7 +150,7 @@
 
     .dong2 {
         width: 104px;
-        height: 550px;
+        height: 500px;
         text-align: center;
         overflow-y: auto;
         overflow-x: hidden;
@@ -118,8 +181,8 @@ a:hover {
 .card-body:hover {}
 
 .card:hover {
-    background-color: rgb(249, 248, 255);
-    box-shadow: 5px 5px 2px #6f6f70;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 1px #6f6f70;
     line-height: 1.2;
 }
 
@@ -136,21 +199,51 @@ a:hover {
 }
 
 .ooh {
-    text-overflow: -o-ellipsis-lastline;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    word-break: break-all;
 }
 
 .doh {
-    text-overflow: -o-ellipsis-lastline;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.tooltip-inner {
+    background-color: rgb(30, 144, 255, 0.6);
+}
+
+.tooltip.top .tooltip-arrow {
+    background-color: rgb(30, 144, 255, 0.6);
+}
+
+.ooh {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.doh {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
 }
 
 /*滚动条*/
@@ -159,7 +252,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(132, 211, 248, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(30, 144, 255, 0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -169,7 +262,7 @@ a:hover {
     border-radius: 10px;
     background: rgb(90, 137, 236);
     background-color: rgb(91, 129, 212);
-    -webkit-box-shadow: inset 0 0 6px rgba(132, 211, 248, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(30, 144, 255, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
